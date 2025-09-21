@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="audio.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">    
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="main heading">Music player</h1>
+            <img src="waymaker.png" id="img" class="img"/>
+            <strong id="name1">Track name</strong>
+            <audio id="audio">
+                <source src="Way-Maker.mp3" type="audio/mpeg">
+            </audio>
+            <div class="progress-container">
+                <input type="range" id="progress" value="0" min="0" max="100">
+                <span id="currtime">00:00</span><p>/</p><span id="duration">00:00</span>
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="bi bi-skip-backward-fill"></i></button>
+                <button id="play" class="playbutton"><i class="bi bi-play-fill"></i></button>
+                <button id="next"><i class="bi bi-skip-forward-fill"></i></button>
+                <button id="volumeup"><i class="bi bi-volume-up-fill"></i></button>
+                <button id="volumedown"><i class="bi bi-volume-down-fill"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="audio.js"></script>
+</body>
+</html>

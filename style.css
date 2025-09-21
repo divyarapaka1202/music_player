@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:ivory;
+
+;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(114, 228, 228);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgb(0,0,0,1);
+    min-width: 300px;;
+}
+.img{
+    width: 170px;
+    height:170px;
+    border-radius: 50%;
+    margin: 10px 0 10 0;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+button{
+    background-color:darksalmon;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    border: none;
+}
+.rotate{
+    animation: rotate 20s linear infinite;
+}
+@keyframes rotate{
+    from{transform:rotate(0deg);}
+    tp{transform :rotate(360deg);}
+}
+.progress-container{
+    background-color:azure;
+    border-radius: 40px;
+    height:8vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+   
+}
+span{
+    margin-top:3vh;
+}
+p{
+        margin-top:3vh;
+
+}
+strong{
+    margin:10px;
+}
+h1{
+    margin: 10px;
+}
